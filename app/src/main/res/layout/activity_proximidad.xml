@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fondo_Cambiar"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:padding="20dp"
+    tools:context=".Activity_Proximidad">
+
+    <TextView
+        android:id="@+id/Cambiar_Color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Prueba Sensor De Proximidad"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/Dato_Sensor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="El Sensor Está"
+        android:textColor="@color/black"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cambiar_Color"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Mostrar_Dato"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text=" Valor es: "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dato_Sensor"
+        tools:ignore="MissingConstraints"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
